@@ -84,17 +84,15 @@ class _MyHomePageState extends State<MyHomePage> {
                                             " " +
                                             _items[index]["last_name"],
                                         style: TextStyle(
-                                            fontWeight: FontWeight.bold),
+                                            fontWeight: FontWeight.bold, fontSize: 20),
                                       ),
                                     ],
                                   ),
-                                  SizedBox(height: 4),
                                   Row(
                                     children: [
-                                      Text(_items[index]["username"]),
+                                      Text(_items[index]["username"],style: TextStyle(fontSize: 18),),
                                     ],
                                   ),
-                                  SizedBox(height: 4),
                                   Row(
                                     children: [
                                       Text(
@@ -102,7 +100,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                             ? _items[index]["status"]
                                             : "No Status",
                                         style:
-                                            TextStyle(color: Colors.grey[500]),
+                                            TextStyle(color: Colors.indigo),
                                       ),
                                     ],
                                   ),
